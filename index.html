@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blog Everyday Git</title>
+    <style>
+        .Paragraph-info{
+        font-size: 18px;
+        }
+        .createfoldercmd{
+        height: 200px;
+        width: 700px;
+        
+        }
+        .createfoldercmd img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+      <h1 style="text-align: center;">EVERYDAY GIT</h1>
+      <div>
+        <h2>1. Get Started</h2>
+           <h3>Development Environment</h3>
+           <p class="Paragraph-info">Choose and install a code editor/IDE popular options include:<br/>
+           <ul>
+            <li class="Paragraph-info">VS code (recommended)</li>
+            <li class="Paragraph-info">Sublime Text</li>
+            <li class="Paragraph-info">JetBrains IDEs</li>
+           </ul>
+        </p>
+        <h3>Creating Git Folder</h3>
+        <p class="Paragraph-info">You can create a folder using the <b>file explorer</b> manually or use the command 
+            prompt as below:
+        </p>
+
+        <div class="createfoldercmd">
+            <figure>
+                <figcaption>Creating folder and navigating to it using command terminal</figcaption>
+                <img src="./Images/createfoldercmd.png" alt="commands in cmd"/>
+                
+            </figure>
+     
+        </div>
+        <p style="margin-top: 45px;"  class="Paragraph-info"><b>mkdir</b> makes a new directory<br/><b>cd changes the current working directory</b></p>
+      </div>
+      <div>
+        <h2>2. What is Git</h2>
+        <p class="Paragraph-info">Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+            <br/>
+            It is used for:
+            <ul>
+                <li class="Paragraph-info">Tracking code changes</li>
+                <li class="Paragraph-info">Tracking who made changes</li>
+                <li class="Paragraph-info">Coding collaboration</li>
+            </ul>
+        </p>
+        <h3>It is used for:</h3>
+        <ul>
+            <li class="Paragraph-info">Manage projects with Repositories</li>
+            <li class="Paragraph-info">Clone a project to work on a local copy</li>
+            <li class="Paragraph-info">Control and track changes with Staging and Committing</li>
+            <li class="Paragraph-info">Branch and Merge to allow for work on different parts and versions of a project</li>
+            <li class="Paragraph-info">Pull the latest version of the project to a local copy</li>
+            <li class="Paragraph-info">Push local updates to the main project</li>
+        </ul>
+        <h3>Other Version control systems are:</h3>
+        <ul>
+            <li class="Paragraph-info"><b>Subversion (SVN):</b> A centralized version control system that has been popular for many years.</li>
+            <li class="Paragraph-info"><b>Mercurial:</b> A distributed version control system that is known for its simplicity and speed.</li>
+            <li class="Paragraph-info"><b>Bazaar:</b> A distributed version control system that is designed to be easy to use and flexible.</li>
+        </ul>
+        <strong class="Paragraph-info">In this blog I will be going through git and github</strong>
+      </div>
+      <div>
+        <h2>3. Installing Git</h2>
+        <h3>Git Install</h3>
+        <p class="Paragraph-info">You can download git for free from the following website <a href="https://www.git-scm.com/"target="_black">https://www.git-scm.com/</a></p>
+        <h3>Using Git with command line</h3>
+        <p class="Paragraph-info">We start by opening the command prompt or shell
+            <br>
+            <br/>
+            For Windows, you can use Git bash, which comes included in Git for Windows. For Mac and Linux you can use the built-in terminal.
+            <br/>
+            <br/>
+            The first thing we need to do, is to check if Git is properly installed:
+        </p>
+        <div>
+            <figure>
+                <img src="./Images/checkgit.png" alt="commands in cmd to check git instatlation"/>
+                <figcaption>Checking whether git is installed in the system or not</figcaption>
+            </figure>
+              </div>
+              <p class="Paragraph-info">If Git is installed, it should show something like <b>git version X.Y</b></p>
+      </div>
+      <div>
+        <h2>4. Configuring Git</h2>
+        <p class="Paragraph-info">Now let Git know who you are. This is important for version control systems, as each Git commit uses this information:</p>
+
+            <figure>
+                <img src="./Images/gitsetup.png" alt="commands in cmd to setup git"/>
+                <figcaption>Checking whether git is installed in the system or not</figcaption>
+            </figure>
+            <p class="Paragraph-info">Change the user name and e-mail address to your own. You will probably also want to use this when registering to GitHub later on.</p>
+              </div>
+      </div>
+      <div>
+        <h2>5. Intializing a Git repository</h2>
+        <p class="Paragraph-info">Once you have navigated to the correct folder as shown in 1 above in getting started section, you can initialize Git on that folder:</p>
+        <P class="Paragraph-info">A Git repository is a folder that stores all the files and directories of a project, along with their version history. It's essentially a database that keeps track of changes made to the project over time.</P>
+        <figure>
+            <img src="./Images/initgit.png" alt="commands in cmd to initialize git"/>
+            <figcaption>check whether git is initialised if not initialise it</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>6. Adding files to the staging area</h2>
+        <p class="Paragraph-info">Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.<br>
+        <p class="Paragraph-info">Lets list the files in our current directory</p>
+        <figure>
+            <img src="./Images/untracked.png" alt="command to check for untracked files"/>
+            <figcaption>check whether the status of directory for untracked files</figcaption>
+        </figure>
+    </p>
+    <p class="Paragraph-info">Now Git is aware of the file, but has not added it to our repository!</p>
+    <p class="Paragraph-info">Files in your Git repository folder can be in one of 2 states:<br/>
+        <ul>
+            <li class="Paragraph-info">Tracked - files that Git knows about and are added to the repository</li>
+            <li class="Paragraph-info">Untracked - files that are in your working directory, but not added to the repository</li>
+        </ul>
+    </p>
+    <p class="Paragraph-info"> When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.<br>
+        Lets add index.html file to the staging environment.
+    </p>
+    <figure>
+        <img src="./Images/staging.png" alt="command to stage index.html file"/>
+        <figcaption>staging the index.html file</figcaption>
+    </figure>
+      </div>
+      <div>
+        <h2>7. Commiting changes</h2>
+        <p class="Paragraph-info" >Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
+            <br>
+            <br/>
+            When we commit, we should always include a message.
+            <br>
+            <br/>
+            Is a good practice to ask your self "The commit ..." and the answer to this is what you write as your message
+        </p>
+        <figure>
+            <img src="./Images/COMMIT.png" alt="command to commit"/>
+            <figcaption>commiting index.html file</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>8. Branches</h2>
+        <p class="Paragraph-info">In Git, a branch is a new/separate version of the main repository
+       <br>
+       <br>
+       Branches allow you to work on different parts of a project without impacting the main branch.
+        </p>
+        <h3>Why are they important?</h3>
+        <ul>
+            <li class="Paragraph-info"><strong>Isolation</strong>: Work on new features without affecting the main code.</li>
+            <li class="Paragraph-info"><strong>Parallel Development</strong>: Multiple people can work on different parts at the same time.</li>
+            <li class="Paragraph-info"><strong>Experimentation</strong>: Try new ideas without breaking the main code.</li>
+            <li class="Paragraph-info"><strong>Feature Flags</strong>: Control when new features are available.</li>
+            <li class="Paragraph-info"><strong>Rollback</strong>: Go back to a previous version if something goes wrong.</li>
+            <li class="Paragraph-info"><strong>Code Review</strong>: Check changes before merging them into the main code.</li>
+            <li class="Paragraph-info"><strong>Release Management</strong>: Manage different versions of your software.</li>
+          </ul>
+      </div>
+      <div>
+        <h2>9. Creating a branch</h2>
+        <h3>New Git Branch</h3>
+        <p class="Paragraph-info">Now lets add a new file in our respository name it new.txt
+            <br>
+            <br>
+            We are working in our local repository, and we do not want to disturb or possibly wreck the main project.
+            <br>
+            So we create a new branch and confirm is created.
+        </p>
+        <figure></figure>
+            <img src="./Images/branchcreate.png" alt="command to create a branch"/>
+            <figcaption>Creating a new branch and check whether is created.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>10. Viewing all branches</h2>
+        <P class="Paragraph-info">To view all branches in the respository we use git branch command</P>
+        <figure>
+            <img src="./Images/viewallbranch.png" alt="command to view all branches"/>
+            <figcaption>viewing all branches in the respository</figcaption>
+        </figure>
+        <p class="Paragraph-info">In the above we have two branches namely master and new_branch</p>
+        <p class="Paragraph-info">The current branch to which you are at is colored green and begins with asterix operator (*)</p>
+      </div>
+      <div>
+        <h2>11. Switching active branches</h2>
+        <p class="Paragraph-info">To move from one branch to another, we use checkout or switch command and name of the branch.</p>
+        <figure>
+        <img src="./Images/switchbranch.png" alt="command to switch to a branch"/>
+        <figcaption>switching to a branch</figcaption>
+    </figure>
+      </div>
+      <div>
+        <h2>12. Merging a branch</h2>
+        <P class="Paragraph-info">We have the new_branch ready, and so let's merge the master and emergency-fix branches. <br/>
+        <br>
+        First, we need to change to the master branch:
+        <br>
+        <br>
+        Then merge the current branch (master) with new_branch
+        </P>
+        <figure>
+            <img src="./Images/merge.png" alt="command to merge branches"/>
+            <figcaption>Merging master and new_branch</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>13. Deleting a branch</h2>
+        <p  class="Paragraph-info">To delete a branch we use the flag d for branches with no difference with master else an error appears and in such a case 
+            we use flad D.
+        </p>
+        <p>Lets delete our branch new_branch</p>
+        <figure>
+            <img src="./Images/delete.png" alt="command to delete a branch"/>
+            <figcaption>Deleting a branch</figcaption>
+        </figure>
+        <p class="Paragraph-info">Now you have a better understanding of how branches and merging works. Time to start working with a remote repository!</p>
+        <p class="Paragraph-info">go to <a href="https://github.com/"target="_blank">github</a> and create an account if you dont have one and start working on your remote respository</p>
+      </div>
+</body>
+</html>
