@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Blog Everyday Git</title>
     <style>
+        .overall-container{
+        padding: 30px;
+        margin: 20px;
+        }
         .Paragraph-info{
-        font-size: 18px;
+        font-size: 21px;
         }
         .createfoldercmd{
         height: 200px;
@@ -20,8 +24,9 @@
         }
     </style>
 </head>
-<body>
-      <h1 style="text-align: center;">EVERYDAY GIT</h1>
+<body class="overall-container">
+      <h1 style="text-align: center;">The Blog Everyday Git</h1>
+      
       <div>
         <h2>1. Get Started</h2>
            <h3>Development Environment</h3>
@@ -101,8 +106,8 @@
         <p class="Paragraph-info">Now let Git know who you are. This is important for version control systems, as each Git commit uses this information:</p>
 
             <figure>
-                <img src="./Images/gitsetup.png" alt="commands in cmd to setup git"/>
-                <figcaption>Checking whether git is installed in the system or not</figcaption>
+                <img src="./Images/gitsetup.png" alt="commands to configure email and user name"/>
+                <figcaption>Configuring name and email for git</figcaption>
             </figure>
             <p class="Paragraph-info">Change the user name and e-mail address to your own. You will probably also want to use this when registering to GitHub later on.</p>
               </div>
@@ -118,8 +123,8 @@
       </div>
       <div>
         <h2>6. Adding files to the staging area</h2>
-        <p class="Paragraph-info">Staged files are files that are ready to be committed to the repository you are working on. You will learn more about commit shortly.<br>
-        <p class="Paragraph-info">Lets list the files in our current directory</p>
+        <p class="Paragraph-info">Staged files are files that are ready to be committed to the repository you are working on.<br>
+        <p class="Paragraph-info">Lets add a file named index.html and list all contents in the directory to see their status.</p>
         <figure>
             <img src="./Images/untracked.png" alt="command to check for untracked files"/>
             <figcaption>check whether the status of directory for untracked files</figcaption>
@@ -139,6 +144,7 @@
         <img src="./Images/staging.png" alt="command to stage index.html file"/>
         <figcaption>staging the index.html file</figcaption>
     </figure>
+    <p class="Paragraph-info">We use command add name_of_file to add a specific file or add . to add all files to staging area</p>
       </div>
       <div>
         <h2>7. Commiting changes</h2>
@@ -233,5 +239,6 @@
         <p class="Paragraph-info">Now you have a better understanding of how branches and merging works. Time to start working with a remote repository!</p>
         <p class="Paragraph-info">go to <a href="https://github.com/"target="_blank">github</a> and create an account if you dont have one and start working on your remote respository</p>
       </div>
+      <h1 style="text-align: center;">Thankyou for reading the document</h1>
 </body>
 </html>
